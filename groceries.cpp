@@ -207,7 +207,7 @@ public:
     }
 
     // Function to print an order and return a formatted string
-    string print_order(const Customer& customer) const {
+        string print_order(const Customer& customer, const vector<Item>& items) const {
         ostringstream oss;
         oss << "===========================\n";
         oss << "Order #" << order_number << ", Date: " << order_date << "\n";
